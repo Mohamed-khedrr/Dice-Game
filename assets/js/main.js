@@ -50,8 +50,8 @@ function newGame() {
   rollDiceButton.style.display = "inline";
   holdButton.style.display = "inline";
   dicePic.style.display = "inline";
-  player1.container.style.display = "flex";
-  player2.container.style.display = "flex";
+  player1.container.style.visibility = "visible";
+  player2.container.style.visibility = "visible";
 }
 
 // ==== this function handle the roll Dice Action ====
@@ -110,7 +110,7 @@ function clearCurrentScore() {
 // Winning function
 function winning(winner) {
   let loser = winner == player1 ? player2 : player1;
-  loser.container.style.display = "none";
+  loser.container.style.visibility = "hidden";
   rollDiceButton.style.display = "none";
   holdButton.style.display = "none";
   dicePic.style.display = "none";

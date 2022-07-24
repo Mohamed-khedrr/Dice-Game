@@ -149,4 +149,5 @@ body {
   left: 50%;
   transform: translate(-50%);
   font-size: var(--large-font);
+  visibility: visible;
 }
