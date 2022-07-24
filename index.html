@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DICE GAME</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="winner">Winner</div>
+      <div class="left-side">
+        <h3 class="player-name">PLAYER 1</h3>
+        <h2 class="total-score" id="total-score1">0</h2>
+        <div class="current-score-box">
+          <h4>CURRENT</h4>
+          <h3 class="current-score-value" id="current-score-1">0</h3>
+        </div>
+      </div>
+      <div class="right-side">
+        <h3 class="player-name">PLAYER 2</h3>
+        <h2 class="total-score" id="total-score2">0</h2>
+        <div class="current-score-box">
+          <h4>CURRENT</h4>
+          <h3 class="current-score-value" id="current-score-2">0</h3>
+        </div>
+      </div>
+      <div class="controllers">
+        <div>
+          <button class="new-game control-button" id="new-game">
+            <i class="fa-solid fa-repeat repeat-icon icon"></i> NEW GAME
+          </button>
+        </div>
+        <div>
+          <div class="dice-pic-container">
+            <div class="dice-pic">
+              <img id="dice" src="assets/photos/1.png" />
+            </div>
+          </div>
+          <div>
+            <button class="roll-dice control-button" id="roll-dice">
+              <i class="fa-solid fa-dice-five dice-icon icon"></i>
+              ROLL DICE
+            </button>
+          </div>
+          <div>
+            <button class="hold control-button" id="hold-button">
+              <i class="fa-solid fa-file-arrow-up icon hold-icon"></i>Hold
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======= JS ======= -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

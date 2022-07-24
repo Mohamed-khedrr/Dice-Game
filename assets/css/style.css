@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@400;500&family=Nunito:wght@700&family=Poppins:wght@500;800&family=VT323&display=swap");
+
+:root {
+  --midum-font: 1.2rem;
+  --large-font: 4rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  /* font-weight: 700px;s */
+}
+
+body {
+  background-image: linear-gradient(135deg, #bf2e34, #743680);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 50rem;
+  height: 40rem;
+  display: flex;
+  box-shadow: 5px 5px 20px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.left-side,
+.right-side {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5%;
+  flex-direction: column;
+  position: relative;
+}
+
+.left-side {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 2% 0 0 2%;
+}
+.right-side {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 2% 2% 0;
+}
+
+.current-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: #c7365f;
+  border-radius: 5%;
+  font-size: var(--midum-font);
+  padding: 2rem;
+  color: white;
+  padding: 1rem;
+}
+.current-score h4 {
+  font-size: 1.3rem;
+  font-weight: 50px;
+}
+.current-score-value {
+  font-size: 2rem;
+}
+
+.total-score {
+  color: #c7365f;
+  font-size: var(--large-font);
+}
+
+.player-name {
+  font-size: 40px;
+  color: rgb(63, 62, 62);
+}
+.controllers {
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  /* background-color: #743680; */
+  height: 100%;
+  /* width: 50%; */
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0;
+  text-align: center;
+}
+.control-button {
+  font-size: 1.1rem;
+  width: 160px;
+  margin: 10% 0;
+  padding: 7% 10%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5;
+  color: rgb(91, 90, 90);
+}
+.hold {
+  width: 100px;
+}
+.control-button:hover {
+  background-color: rgb(229, 229, 231);
+}
+.dice-pic-container {
+  display: flex;
+  justify-content: center;
+}
+.dice-pic {
+  width: 150px;
+  height: 150px;
+  margin: 2rem 0;
+}
+#dice {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.repeat-icon {
+  color: rgb(230, 105, 151);
+}
+.icon {
+  margin-right: 5px;
+}
+.dice-icon {
+  color: rgb(104, 143, 220);
+}
+.hold-icon {
+  /* color: rgb(220, 181, 104); */
+  color: rgb(177, 125, 19);
+}
+.winner {
+  position: absolute;
+  color: rgb(45, 158, 45);
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: var(--large-font);
+}
